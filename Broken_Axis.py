@@ -20,7 +20,8 @@ mut2 = np.array(data_plt.loc[['mut2-0','mut2-2','mut2-4','mut2-8']]['mean'])
 mut2_err = np.array(data_plt.loc[['mut2-0','mut2-2','mut2-4','mut2-8']]['std'])
 mut3 = np.array(data_plt.loc[['mut3-0','mut3-2','mut3-4','mut3-8']]['mean'])
 mut3_err = np.array(data_plt.loc[['mut3-0','mut3-2','mut3-4','mut3-8']]['std'])
-
+print(mut3_err)
+print(mut3)
 ################################ 设置图形格式 #################################
 
 n = 3; m = 1 # 设置图形比例的数值
