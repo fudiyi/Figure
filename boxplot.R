@@ -28,3 +28,6 @@ ggplot(data,aes(x=AA_type,y=Value))+
   stat_pvalue_manual(stat.test, x = "AA_type",label = "p.signif",y.position = 7.5)
 
 dev.off()
+
+
+## Ref: 超链接：[添加显著性标识的方法](http://rpkgs.datanovia.com/ggpubr/reference/stat_pvalue_manual.html)
