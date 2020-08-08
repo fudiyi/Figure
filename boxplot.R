@@ -30,4 +30,4 @@ ggplot(data,aes(x=AA_type,y=Value))+
 dev.off()
 
 
-## Ref: 超链接：[添加显著性标识的方法](http://rpkgs.datanovia.com/ggpubr/reference/stat_pvalue_manual.html)
+## Ref: [添加显著性标识的方法] (http://rpkgs.datanovia.com/ggpubr/reference/stat_pvalue_manual.html)
