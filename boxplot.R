@@ -27,6 +27,9 @@ ggplot(data,aes(x=AA_type,y=Value))+
   scale_fill_manual(values=c("orange2","dodgerblue2"))+theme_classic() + theme(legend.position = c(0.9,0.3))+
   stat_pvalue_manual(stat.test, x = "AA_type",label = "p.signif",y.position = 7.5)
 
+# axis.line/ticks 分别修改坐标轴的线条和刻度的粗细；axis.text 修改坐标轴字体的大小
+theme(axis.line = element_line(size = 1),axis.text = element_text(size=15),axis.ticks = element_line(size = 1))
+
 dev.off()
 
 
