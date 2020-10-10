@@ -9,6 +9,11 @@ setwd("E:/")
 data <-read.csv("4aa.csv",header=T)
 data=data.frame(data)
 
+# 删除某一列中含有特定字符的行
+data=data[-which(data$AA_type == "Arg"),]
+或 
+data <- data[!(data$AA_type == "Arg"), ]
+
 # 修改柱子/x轴顺序
 data$treat = factor(data$treat, levels=c('Warm','Cold'))
 data$AA_type = factor(data$AA_type, levels=c('Asn','Asp','Gln','Glu'))
