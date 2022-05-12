@@ -68,7 +68,7 @@ bbx78_24_3  BBX  t24
 all.equal(rownames(data1), rownames(ann_row))
 
 pheatmap(data1,cluster_col=TRUE,cluster_row=FALSE,show_row=F,fontsize=8,color=colorRampPalette(c("blue","yellow","red"))(100),border_color=FALSE,
-         annotation_row = ann_row, breaks=bk)
+         annotation_row = ann_row, breaks=bk,cutree_rows =5)
 
 # 修改排序
 
